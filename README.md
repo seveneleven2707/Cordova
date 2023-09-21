@@ -2,4 +2,4 @@
 
 [자기소개](https://seveneleven2707.github.io/Cordova/week2/startbootstrap-freelancer-gh-pages/index.html)
 <hr>
-[자기소개](https://seveneleven2707.github.io/Cordova/week3/startbootstrap-freelancer-gh-pages/index.html)
+[자기소개](https://seveneleven2707.github.io/Cordova/week3/week3.html)
