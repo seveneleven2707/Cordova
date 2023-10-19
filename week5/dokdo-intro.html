@@ -1,0 +1,143 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>jQuery Mobile</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style>
+   li { list-style:none; }
+  .picture { list-style:none; padding:0; margin:0; }
+  .picture li { float:left; width:50%;}
+  .picture li a {display:block; margin:5px; border: 1px }
+  .picture li img { display:block; width:50%;  height:auto;}
+  .picture li img:hover { display:block; width:100%;  height:auto;} 
+</style>
+</head>
+
+<body>
+<div data-theme="b">
+	<div data-role="page" id="home">
+		<div data-role="header" data-theme="b">
+			<h1>학교 소개 앱</h1>
+		</div>
+		<div data-role="content" style="text-align:center">
+				<img src="dong.png" >
+			<ul data-role="listview" data-inset="true">
+				<li><a href="#intro">학교소개</a></li>
+				<li><a href="#movie" data-rel="dialog">학과영상</a></li>
+				<li><a href="#wizard3-1" data-rel="dialog">학교음악</a></li>
+				<li><a href="#gallery">학교사진</a></li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>학교사랑_방정철</h1>
+		</div>
+	</div>
+	
+	<div data-role="page" id="intro" data-theme="b">
+		<div data-role="header" data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>			
+			<h1>학교 소개</h1>
+		</div>
+		<div data-role="content">
+				<div  style="text-align:center">
+					<img src="dong.png">
+				</div>			
+			<div data-role="collapsible-set" data-theme="b" data-content-theme="e">
+				<div data-role="collapsible" data-collapsed="false">
+					<h3>학교 주요 역사</h3>
+					<p>교육부 대학기본역량진단 평가 '일반재정지원대학' 선정(2021)
+교육부 조기 취업형 계약학과 선도전문대학 육성사업 선정(2021~)
+교육부 마이스터 시범운영 대학 선정(2021)
+교육부 사회맞춤형 산학협력 선도전문대학(LINC+) 육성사업 선정(2019~2021)
+교육부·국가평생교육진흥원 평생교육체제 지원사업(LiFE) 선정(2019~2022)
+교육부 전문대학교육혁신지원사업 1차연도 연차평가 최우수등급 'A등급' 획득(2020)
+교육부 대학기본역량진단 평가 '자율협약형' 선정(2020)
+교육부 대학기본역량진단 평가 '자율개선대학' 선정(2018)
+고등직업교육 평가인증원 2주기 대학 기관평가 인증 획득(2017~2022)
+부산정보산업진흥원 대학모바일앱서브센터 선정(2018)
+한국간호교육평가원 3주기 간호교육 인증 획득(2018~2023)
+보건복지부 간호대학 실습교육 지원사업 교육형 수행기관 선정(2019)
+한국전문대학교육협의회 우수 교수학습 지원 전문대학 선정(2019)
+문화체육관광부 공공스포츠클럽 공모사업(2020)
+(사)대한물리치료사협회 한국물리치료교육평가원‘물리치료교육인증기관' 선정(2021)
+전문인력 양성 등 각종 공모사업
+중소벤처기업부 대학연계 중소기업인력양성사업 선정(2019)
+부산광역시 BB21플러스(Brain Busan 21+) 사업 선정(2018)
+해양수산부·고용노동부 제2차 크루즈 전문인력 양성기관 선정(2018~2022)
+(재)부산인재평생교육진흥원 미래 신직업군 전문인력 양성사업 선정(2018 ~ 2019)
+한국산업인력공단·고용노동부 청해진대학 및 K-MOVE스쿨 운영기관 선정
+한국산업인력공단 고숙련일학습병행(P-TECH) 공동훈련센터 선정
+교육부·중소벤처기업부 기술사관육성사업 선정
+</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>학교위치</h3>
+					<p>부산광역시 부산진구 양지로 54 (양정동)</p>
+				</div>
+				<div data-role="collapsible" >
+					<h3>학교 재학생 수</h3>
+					<p>4000명이 넘는 학생들이 이 학교에 재학한다 4333명(2021)</p>
+				</div>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>학교사랑_방정철</h1>
+		</div>		
+	</div>
+	
+	<div data-role="page" id="movie" data-theme="b">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<h1>학교 영상</h1>
+		</div>
+		<div data-role="content" >
+			<div class="ui-bar ui-bar-a">학교 소개 동영상</div><br/>
+			<li><iframe width="100%" height="240" src="https://www.youtube.com/watch?v=6Lt-pboLCQs"></iframe></li><br/>
+			<div class="ui-bar ui-bar-a">학과 동영상</div><br/>
+				<li><iframe width="200%" height="480" src="https://www.youtube.com/watch?v=6Lt-pboLCQs"></iframe></li>
+		</div>
+		<div data-role="footer" data-theme="b">
+		</div>
+	</div>
+	
+	<div data-role="page" id="wizard3-1">
+		<div data-role="header">
+			<h1>학교 노래1</h1>
+		</div>
+		<div data-role="content">
+			<div class="ui-bar ui-bar-e">교가</div><br/>
+			<audio controls width="100%" preload="metadata">
+				<source src="song.mp3" type="audio/mp3">
+			</audio>	
+			<img src="song.png" alt="" width="100%">
+		</div>
+		<div data-role="footer">
+			<a href="#home"  data-direction="reverse">이전</a>
+			<a href="#wizard3-2" data-rel="dialog" data-transition="slide">다음</a>
+		</div>
+	</div>
+
+	<div data-role="page" id="gallery"  data-theme="b">
+		<div data-role="header" data-position="fixed"  data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+			<h1>학교 갤러리</h1>
+		</div>
+		<div data-role="content">
+            <ul class="picture">
+				<li><a href="5-1.jpg" rel="external"><img src="5-1.jpg" /></a></li>	
+				<li><a href="5-2.jpg" rel="external"><img src="5-2.jpg" /></a></li>	
+				<li><a href="5-3.jpg" rel="external"><img src="5-3.jpg" /></a></li>	
+				<li><a href="5-4.jpg" rel="external"><img src="5-4.jpg" /></a></li>	
+				<li><a href="5-5.jpg" rel="external"><img src="5-5.jpg" /></a></li>	
+				            </ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>학교사랑_방정철</h1>
+		</div>		
+	</div>
+</div>	
+</body>
+</html>
