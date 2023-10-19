@@ -10,7 +10,7 @@
 
 #5주차 레포트
 
-[프로젝트3](https://seveneleven2707.github.io/Cordova/week5/week5.html)
+[프로젝트3](https://seveneleven2707.github.io/Cordova/week5/school-intro.html)
 
 ![스크린샷 5-1](https://github.com/seveneleven2707/Cordova/assets/40417858/463f4fd1-dd15-434e-8417-28885a45aa89)
 ![스크린샷 5-2](https://github.com/seveneleven2707/Cordova/assets/40417858/291ab216-98ad-4147-8c8a-141055793aae)
